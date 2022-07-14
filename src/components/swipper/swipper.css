@@ -1,0 +1,105 @@
+.mySwiper2.swiper {
+    width: 100%;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.mySwiper.swiper {
+    height: unset;
+}
+
+.mySwiper .swiper-slide {
+    background: black;
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 1.6rem;
+}
+
+.mySwiper .swiper-slide:active {
+    opacity: 0;
+}
+
+.mySwiper2 .swiper-slide {
+    height: max-content;
+}
+
+.mySwiper2 {
+    height: 100%;
+    width: 100%;
+}
+
+.mySwiper.swiper {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper:hover .swiper-button-next {
+    transform: translateX(50%);
+}
+
+.swiper:hover .swiper-button-prev {
+    transform: translateX(-50%);
+}
+
+.swiper-pagination::-webkit-scrollbar {
+    display: none;
+}
+
+.mySwiper2 .swiper-horizontal > .swiper-pagination-bullets,
+.mySwiper2 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.mySwiper2 .swiper-pagination-custom,
+.mySwiper2 .swiper-pagination-fraction {
+    bottom: 0;
+}
+
+/* next, pre button */
+
+.mySwiper2 .swiper-button-next {
+    color: white;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.2s linear;
+}
+
+.mySwiper2 .swiper-button-prev {
+    transition: transform 0.2s linear;
+    color: white;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.mySwiper2 .swiper-button-next::after {
+    font-size: 1.4rem;
+    position: absolute;
+    left: 2rem;
+}
+
+.mySwiper2 .swiper-button-prev::after {
+    font-size: 1.4rem;
+    position: absolute;
+    right: 2rem;
+}
+
+.mySwiper2 .swiper-button-next:active,
+.mySwiper2 .swiper-button-prev:active {
+    opacity: 0;
+}

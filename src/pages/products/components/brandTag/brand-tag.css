@@ -1,0 +1,31 @@
+.brand-tag {
+    text-align: center;
+}
+.brand-name {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 6.5px 18px;
+    position: relative;
+}
+.brand-name:after {
+    width: 0;
+    height: 0;
+    border: 16.5px solid transparent;
+    position: absolute;
+    content: '';
+    border-top-color: black;
+    right: -23px;
+    top: 0px;
+    border-left-color: black;
+}
+.brand-name:before {
+    width: 0;
+    height: 0;
+    border: 19px solid transparent;
+    position: absolute;
+    content: '';
+    border-bottom-color: black;
+    right: -23px;
+    top: -1px;
+}

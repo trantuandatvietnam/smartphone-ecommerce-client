@@ -1,0 +1,37 @@
+.message-tag {
+    position: relative;
+    display: inline-block;
+    background: orange;
+    color: white;
+    height: 5.5rem;
+    width: 5.5rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    transform: rotate(-20deg);
+    animation: beat 1s ease infinite alternate;
+}
+.message-tag::before,
+.message-tag::after {
+    content: '';
+    position: absolute;
+    background: inherit;
+    height: inherit;
+    width: inherit;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(30deg);
+}
+.message-tag::after {
+    transform: rotate(60deg);
+}
+
+@keyframes beat {
+    from {
+        transform: rotate(-20deg) scale(1);
+    }
+    to {
+        transform: rotate(-20deg) scale(1.1);
+    }
+}
